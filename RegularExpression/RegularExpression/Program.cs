@@ -21,6 +21,10 @@ namespace RegularExpression
             Console.WriteLine($"Your Full Name: {TakeName} {TakeLastName}");
 
 
+            Console.WriteLine("Enter your Email, CheckEmail valid or not");
+            string Email = Console.ReadLine();
+            regexClass.ValidEmail(Email);
+
 
         }
     }
