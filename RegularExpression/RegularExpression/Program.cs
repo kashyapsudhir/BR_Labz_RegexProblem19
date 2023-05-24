@@ -14,6 +14,8 @@ namespace RegularExpression
             string TakeName = Console.ReadLine();
             RegexClass regexClass = new RegexClass();
             regexClass.ValidFirstName(TakeName);
+
+
             Console.WriteLine("Enter your LastName, Check valid or not");
             string TakeLastName = Console.ReadLine();
             regexClass.ValidLastName(TakeLastName);
@@ -25,10 +27,15 @@ namespace RegularExpression
             string Email = Console.ReadLine();
             regexClass.ValidEmail(Email);
 
+
             Console.WriteLine("Enter your Phone number, and check valid or not");
             string TakeNumber = Console.ReadLine();
             regexClass.CheckPhoneNumber(TakeNumber);
 
+
+            Console.WriteLine("Enter your Password, Check password valid or not");
+            string Password = Console.ReadLine();
+            regexClass.CheckPassword(Password);
 
         }
     }
