@@ -12,6 +12,7 @@ namespace RegularExpression
         public static string NameRules = "^[A-Z]{1}[a-z]{2,}$";
         public static string LastNameRules = "^[A-Z]{1}[a-z]{2,}$";
         public static string EmailRules = "^[a-z]+[.+-_]{0,1}[0-9 a-z]+[@][a-z]+[.][a-z]{2,3}([.][a-z]{2,3}){0,1}$";
+        public static string PhoneNumberRules = "^[0-9]{0,2}[+]{0,1}[8 9]{0,1}[0-9]{9}$";
         public void ValidFirstName(string Name)
         {
             
@@ -35,6 +36,15 @@ namespace RegularExpression
                 Console.WriteLine($"This is Valid Email:{EmailCheck}");
             else
                 Console.WriteLine($"This is Invalid Email:{EmailCheck}");
+        }
+
+        public void CheckPhoneNumber(string PhoneNumber)
+        {
+            if (Regex.IsMatch(PhoneNumber, PhoneNumberRules))
+                Console.WriteLine($"This is Valid PhoneNumber:{PhoneNumber}");
+            else
+                Console.WriteLine($"This is Invalid PhoneNumber:{PhoneNumber}");
+
         }
     }
 

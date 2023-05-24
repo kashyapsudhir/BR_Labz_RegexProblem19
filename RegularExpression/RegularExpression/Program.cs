@@ -25,6 +25,10 @@ namespace RegularExpression
             string Email = Console.ReadLine();
             regexClass.ValidEmail(Email);
 
+            Console.WriteLine("Enter your Phone number, and check valid or not");
+            string TakeNumber = Console.ReadLine();
+            regexClass.CheckPhoneNumber(TakeNumber);
+
 
         }
     }
