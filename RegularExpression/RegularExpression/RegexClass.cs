@@ -14,8 +14,9 @@ namespace RegularExpression
         public static string EmailRules = "^[a-z]+[.+-_]{0,1}[0-9 a-z]+[@][a-z]+[.][a-z]{2,3}([.][a-z]{2,3}){0,1}$";
         public static string PhoneNumberRules = "^[0-9]{0,2}[+]{0,1}[8 9]{0,1}[0-9]{9}$";
         //public static string PasswordRules = "^[0-9 A-Z a-z]{8,}$";//UC5
-        //Uc6
-        public static string PasswordRules = "^([A - Z]{0,1})[0-9A-Za-z]{8,}$";
+        
+        //public static string PasswordRules = "^([A - Z]{0,1})[0-9]{1,}[A-Za-z]{8,}$";//UC6
+        public static string PasswordRules = "^[A-Z]{1,}[A-Za-z0-9]{1,10}";//UC7
 
         public void ValidFirstName(string Name)
         {

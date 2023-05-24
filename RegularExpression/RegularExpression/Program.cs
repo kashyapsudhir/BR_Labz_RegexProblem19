@@ -8,7 +8,7 @@ namespace RegularExpression
         public static void Main(string[] args) 
         {
             Console.WriteLine("Welcome to User Registration Problem");
-            Console.WriteLine("hello regex problem UC-6(Password)");
+            Console.WriteLine("hello regex problem UC-7(Password)");
 
             Console.WriteLine("Enter your Name, Check valid or not");
             string TakeName = Console.ReadLine();
