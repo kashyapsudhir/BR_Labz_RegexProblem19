@@ -8,13 +8,20 @@ namespace RegularExpression
         public static void Main(string[] args) 
         {
             Console.WriteLine("Welcome to User Registration Problem");
-            Console.WriteLine("hello regex problem UC-1");
+            Console.WriteLine("hello regex problem UC-2");
 
             Console.WriteLine("Enter your Name, Check valid or not");
             string TakeName = Console.ReadLine();
             RegexClass regexClass = new RegexClass();
             regexClass.ValidFirstName(TakeName);
-          
+            Console.WriteLine("Enter your LastName, Check valid or not");
+            string TakeLastName = Console.ReadLine();
+            regexClass.ValidLastName(TakeLastName);
+
+            Console.WriteLine($"Your Full Name: {TakeName} {TakeLastName}");
+
+
+
         }
     }
 }

@@ -10,6 +10,7 @@ namespace RegularExpression
     public class RegexClass
     {
         public static string NameRules = "^[A-Z]{1}[a-z]{2,}$";
+        public static string LastNameRules = "^[A-Z]{1}[a-z]{2,}$";
         public void ValidFirstName(string Name)
         {
             
@@ -17,6 +18,14 @@ namespace RegularExpression
                 Console.WriteLine($"This is Valid Name:{Name}");
             else
                 Console.WriteLine($"This is Invalid:{Name}");
+        }
+        public void ValidLastName(string LastName)
+        {
+
+            if (Regex.IsMatch(LastName, LastNameRules))
+                Console.WriteLine($"This is Valid Name:{LastName}");
+            else
+                Console.WriteLine($"This is Invalid:{LastName}");
         }
     }
 
